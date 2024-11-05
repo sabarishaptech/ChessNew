@@ -1,0 +1,37 @@
+.box {
+    height: 100px;
+    aspect-ratio: 1/1;
+    display: inline-block;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.master {
+    width: 830px;
+    margin-left: 18%;
+    border: 10px solid saddlebrown;
+}
+
+.row:nth-of-type(odd)>.box:nth-of-type(odd) {
+    background-color: aliceblue;
+}
+
+.row:nth-of-type(odd)>.box:nth-of-type(even) {
+    background-color: royalblue;
+}
+
+.row:nth-of-type(even)>.box:nth-of-type(even) {
+    background-color: aliceblue;
+}
+
+.row:nth-of-type(even)>.box:nth-of-type(odd) {
+    background-color: royalblue;
+}
+
+/*Group Selector*/
+.row:nth-of-type(7),
+.row:nth-of-type(8) {
+    color: red;
+}
